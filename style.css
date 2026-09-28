@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #181818;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #e50914;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e50914;
+}
+
+.starter {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("https://www.isic.hr/uploaded/slike/cinestar2.jpg")
+        center/cover no-repeat;
+}
+
+.starter-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.starter h2 {
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+.starter p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 35px;
+}
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    max-width: 2300px;
+    margin: 0 auto;
+}
+
+.movie-card {
+    width: 100%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-info {
+    padding: 11px;
+}
+
+.movie-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.movie-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #f5c518;
+}
+
+.movie-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #f5c518;
+}
+
+.genres {
+    min-height: calc(100vh - 80px);
+    padding: 70px 8%;
+    background: #181818;
+}
+
+.genres h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.genre-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.genre-list li {
+    font-size: 22px;
+    padding: 14px;
+    text-align: center;
+    color: #ddd;
+    background: #1e1e1e;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.genre-list li:hover {
+    color: #e50914;
+    transform: translateY(-3px);
+}
